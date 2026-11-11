@@ -1,0 +1,359 @@
+:root {
+  --faza_utama: #0f766e;      
+  --faza_utama_gelap: #0b4f4a;
+  --faza_hero_bg: #dff3ee;    
+  --faza_aksen: #f59e0b;     
+  --faza_teks: #1b2b2a;
+  --faza_abu: #5d6f6d;
+  --faza_kartu: #f1f8f6;
+  --faza_footer_bg: #10302c;
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+html { 
+  scroll-behavior: smooth; 
+}
+
+.faza_body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--faza_teks);
+  background: #fff;
+  line-height: 1.5;
+}
+
+/*=== HEADER ===*/
+#faza_header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 8%;
+  background: #fff;
+  border-bottom: 1px solid #e3ecea;
+}
+.faza_logo {
+  text-decoration: none; 
+  font-weight: 700; 
+  font-size: 1.1rem;
+  color: var(--faza_teks);
+}
+.faza_logo i { 
+  color: var(--faza_utama); 
+  margin-right: 6px; }
+.faza_logo span { 
+  color: var(--faza_utama);
+ }
+.faza_menu a {
+  text-decoration: none; 
+  color: var(--faza_teks);
+  font-size: .85rem; 
+  font-weight: 600;
+  margin-left: 26px; 
+  padding-bottom: 4px;
+}
+.faza_menu a:hover,
+.faza_menu_aktif { color: var(--faza_utama); 
+  border-bottom: 2px 
+  solid var(--faza_aksen); 
+}
+
+/*=== HERO ===*/
+#faza_home {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  gap: 30px; 
+  padding: 60px 8%;
+  background: var(--faza_hero_bg);
+}
+.faza_hero_teks { flex: 1; 
+  max-width: 480px;
+}
+.faza_hero_sapa { 
+  font-size: 1.15rem; 
+}
+.faza_hero_nama { font-size: 3rem;
+  line-height: 1.1; 
+  color: var(--faza_utama); 
+  margin-bottom: 8px; }
+.faza_hero_profesi { 
+  font-weight: 600; 
+  margin-bottom: 14px; 
+}
+.faza_hero_desk { font-size: .9rem;
+   color: var(--faza_abu); 
+   margin-bottom: 22px; 
+}
+.faza_hero_tombol { 
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap; 
+}
+.faza_tombol {
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: 10px 20px; 
+  border-radius: 6px; 
+  display: inline-flex; 
+  gap: 8px; 
+  align-items: center;
+}
+.faza_tombol_isi { 
+  background: var(--faza_utama); 
+  color: #fff; 
+}
+.faza_tombol_isi:hover { 
+  background: var(--faza_utama_gelap); 
+}
+.faza_tombol_garis { 
+  border: 2px solid var(--faza_utama);
+  color: var(--faza_utama); 
+  background: #fff; 
+}
+.faza_tombol_garis:hover { 
+  background: var(--faza_aksen); 
+  border-color: var(--faza_aksen); 
+  color: #fff; 
+}
+
+/* -- CSS --*/
+.faza_hero_gambar { 
+  flex: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-end; 
+  gap: 10px; 
+}
+.faza_laptop { 
+  width: 100%; 
+  max-width: 380px; 
+}
+.faza_laptop_layar {
+  height: 210px; 
+  background: #0d2522; 
+  border: 8px solid #1d3b37; 
+  border-radius: 12px 12px 0 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.faza_laptop_layar span { 
+  font-size: 3.2rem; 
+  font-weight: 700; 
+  color: var(--faza_aksen); 
+}
+.faza_laptop_alas { 
+  height: 14px; 
+  background: #b7c9c6; 
+  border-radius: 0 0 20px 20px; 
+}
+.faza_pot { 
+  text-align: center; 
+}
+.faza_pot i { 
+  font-size: 4.5rem; 
+  color: #2f9e6d; 
+  display: block; 
+}
+.faza_pot_badan { 
+  width: 56px; 
+  height: 52px; 
+  background: #fff; 
+  border-radius: 0 0 14px 14px; 
+  margin: -8px auto 0; 
+  box-shadow: 0 2px 6px rgba(0,0,0,.12); 
+}
+
+/* ===== UMUM ===== */
+#faza_about, #faza_skills, #faza_projects { 
+  padding: 36px 8% 10px; 
+}
+.faza_judul { 
+  font-size: 1.35rem; 
+  margin-bottom: 14px; 
+}
+.faza_judul::after { 
+  content: ""; 
+  display: block; 
+  width: 36px; 
+  height: 3px; 
+  background: var(--faza_aksen); 
+  margin-top: 4px; 
+}
+
+/* ===== ABOUT ===== */
+#faza_about { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 30px; 
+}
+.faza_about_kiri { 
+  max-width: 520px; 
+}
+.faza_about_teks { 
+  font-size: .9rem; 
+  color: var(--faza_abu); 
+  margin-bottom: 14px; 
+}
+.faza_about_info { 
+  list-style: none; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 18px; 
+  font-size: .8rem; 
+  color: var(--faza_abu); 
+}
+.faza_about_info i { 
+  color: var(--faza_utama); 
+  margin-right: 6px; 
+}
+.faza_about_foto img { 
+  width: 220px; 
+  height: 170px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  background: var(--faza_hero_bg); 
+}
+
+/* ===== SKILLS ===== */
+.faza_skill_grid { 
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 12px; 
+}
+.faza_skill_item {
+  background: var(--faza_kartu); 
+  border: 1px solid #e0ece9; 
+  border-radius: 8px;
+  padding: 14px; 
+  font-size: .85rem; 
+  display: flex; 
+  align-items: center; 
+  gap: 12px;
+}
+.faza_skill_item i { 
+  font-size: 1.4rem; 
+}
+
+/* ===== PROJECTS ===== */
+.faza_project_grid { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px; 
+}
+.faza_project_kartu {
+  background: #fff; 
+  border: 1px solid #e0ece9; 
+  border-radius: 8px; 
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(15,118,110,.08);
+}
+.faza_project_gambar {
+  height: 90px; 
+  border-radius: 6px; 
+  margin-bottom: 10px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 2.2rem; 
+  color: #fff;
+}
+.faza_warna1 { 
+  background: linear-gradient(135deg, #0f766e, #2dd4bf); 
+}
+.faza_warna2 { 
+  background: linear-gradient(135deg, #4d7c0f, #a3c96b); 
+}
+.faza_warna3 { 
+  background: linear-gradient(135deg, #d97706, #fbbf24); 
+}
+.faza_project_kartu h3 { 
+  font-size: .9rem; 
+}
+.faza_project_kartu p { 
+  font-size: .75rem; 
+  color: var(--faza_abu); 
+  margin: 2px 0 8px; 
+}
+.faza_project_kartu a { 
+  font-size: .75rem; 
+  font-weight: 600; 
+  color: var(--faza_utama); 
+  text-decoration: none; 
+}
+.faza_project_kartu a:hover { 
+  color: var(--faza_aksen); 
+}
+
+/* ===== FOOTER ===== */
+#faza_footer {
+  margin-top: 40px; 
+  padding: 24px 8% 14px;
+  background: var(--faza_footer_bg); 
+  color: #d6e6e3;
+}
+.faza_footer_atas {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+  flex-wrap: wrap;
+  padding-bottom: 14px; 
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.faza_footer_brand strong { 
+  display: block; color: #fff; 
+}
+.faza_footer_brand strong span { 
+  color: var(--faza_aksen); 
+}
+.faza_footer_brand small { 
+  font-size: .72rem; 
+}
+.faza_footer_kontak { 
+  display: flex; 
+  gap: 22px; 
+  flex-wrap: wrap; 
+  font-size: .78rem; 
+}
+.faza_footer_kontak i { 
+  color: var(--faza_aksen); 
+  margin-right: 6px; 
+}
+.faza_footer_hak { 
+  font-size: .7rem; 
+  margin-top: 12px; 
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 900px) {
+  #faza_home, #faza_about { 
+    flex-direction: column; 
+    text-align: left; 
+  }
+  .faza_skill_grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .faza_project_grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .faza_menu a { 
+    margin-left: 14px; 
+  }
+}
+@media (max-width: 520px) {
+  .faza_hero_nama { 
+    font-size: 2.3rem; 
+  }
+  .faza_project_grid { 
+    grid-template-columns: 1fr; 
+  }
+  #faza_header { 
+    flex-direction: column; 
+    gap: 8px; 
+  }
+}
